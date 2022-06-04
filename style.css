@@ -1,7 +1,17 @@
 .item {
     width: 40vw;
-    height: 40vw;
+    height: 10vw;
     background-color: lightskyblue;
     margin: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3%;
     display: flex;
+    font-size: 50px;
+    box-shadow: 0 0 7px darkgray;
+    border-radius: 8px;
+}
+.item:hover {
+    background-color: cornflowerblue;
+    box-shadow: none;
 }
