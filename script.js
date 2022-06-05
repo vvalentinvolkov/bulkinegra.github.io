@@ -5,7 +5,7 @@ $('.item').click(function () {
     console.log(data_to_bot)
 });
 Telegram.WebApp.MainButton.setText('Choose item').show().onClick(function () {
-    const data = 'some item number';
+    const data = data_to_bot;
     Telegram.WebApp.sendData(data);
     Telegram.WebApp.close();
 });
