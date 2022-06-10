@@ -1,12 +1,15 @@
-Telegram.WebApp.ready();
-data_to_bot = ''
-$('.item').click(function () {
-    data_to_bot = $(this).text() + ' item!'
-    console.log(data_to_bot)
+let session_start = 0
+$( document ).ready(function() {
+    session_start = new Date().getTime()
 });
-Telegram.WebApp.MainButton.setText('Choose item').show().onClick(function () {
-    const data = data_to_bot;
-    Telegram.WebApp.sendData(data);
-    Telegram.WebApp.close();
+let tg = window.Telegram.WebApp; //получаем объект webapp телеграма
+tg.expand(); //расширяем на все окно
+tg.MainButton.text = "Задать вопрос"; //изменяем текст кнопки
+tg.MainButton.textColor = "#ffffff"; //изменяем цвет текста кнопки
+tg.MainButton.color = "#e88542"; //изменяем цвет бэкграунда кнопки
+
+Telegram.WebApp.onEvent('mainButtonClicked', function(){
+    let session_end = new Date().getTime()
+    tg.sendData(JSON.stringify({'session_time': session_end-session_start}));
 });
-Telegram.WebApp.expand();
+// Usual js
