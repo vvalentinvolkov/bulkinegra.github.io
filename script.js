@@ -2,7 +2,8 @@ let session_start = 0
 $( document ).ready(function() {
     session_start = new Date().getTime()
 });
-let tg = window.Telegram.WebApp; //получаем объект webapp телеграма
+let tg = Telegram.WebApp
+tg.ready();
 tg.expand(); //расширяем на все окно
 tg.MainButton.text = "Задать вопрос"; //изменяем текст кнопки
 tg.MainButton.textColor = "#ffffff"; //изменяем цвет текста кнопки
