@@ -4,16 +4,66 @@
     <meta charset="UTF-8">
     <title>python-telegram-bot Example WebApp</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="item">0</div>
-    <div class="item">1</div>
-    <div class="item">2</div>
-    <div class="item">3</div>
-    <div class="item">4</div>
-    <div class="item">5</div>
+
+<body class="p-10 text-4xl font-montserrat relative bg-[url('img/back.jpg')]">
+
+    <div class="space-y-6 items-center flex flex-col"> <!--section-->
+
+         <!--title-->
+        <h3 class="text-5xl w-min text-center bg-white rounded-3xl border-8 border-amber-400 p-6">
+            Title&nbsp;of&nbsp;section
+        </h3>
+
+
+        <!--item-->
+        <div tabindex="0" class="collapse bg-white shadow-lg rounded-lg p-6">
+            <!--item-title-->
+            <div class="collapse-title flex flex-row items-center space-x-5">
+                <span class="h-min grow pb-1">Чат&nbsp;боты</span>
+                <div class="rounded-full bg-yellow-500 px-6 pt-1 pb-2">review</div>
+            </div>
+            <!--item-content-->
+            <div class="collapse-content">
+                <p class="pt-4 font-nato">tabindex="0" attribute is necessary to make the div focusable
+                tabindex="0" attribute is necessary to make the div focusable
+                tabindex="0" attribute is necessary to make the div focusable
+                tabindex="0" attribute is necessary to make the div focusable</p>
+            </div>
+        </div>
+
+        <!--item-->
+        <div tabindex="0" class="collapse bg-white shadow-lg rounded-lg p-6">
+            <!--item-title-->
+            <div class="collapse-title flex flex-row items-center space-x-5">
+                <span class="h-min grow pb-1">Боты&nbsp;как&nbsp;пользователи</span>
+                <div class="rounded-full bg-yellow-500 px-6 pt-1 pb-2">review</div>
+            </div>
+            <!--item-content-->
+            <div class="collapse-content">
+                <p class="pt-4">tabindex="0" attribute is necessary to make the div focusable
+                tabindex="0" attribute is necessary to make the div focusable</p>
+            </div>
+        </div>
+
+        <!--item-->
+        <div tabindex="0" class="collapse bg-white shadow-lg rounded-lg p-6">
+            <!--item-title-->
+            <div class="collapse-title flex flex-row items-center space-x-5">
+                <span class="h-min grow pb-1">Боты&nbsp;с&nbsp;Web&nbsp;Application</span>
+                <div class="rounded-full bg-yellow-500 px-6 pt-1 pb-2">review</div>
+            </div>
+            <!--item-content-->
+            <div class="collapse-content">
+                <p class="pt-4">tabindex="0" attribute is necessary to make the div focusable
+                tabindex="0" attribute is necessary to make the div focusable</p>
+            </div>
+        </div>
+
+    </div>
+
 </body>
 
     <script src="script.js"></script>
